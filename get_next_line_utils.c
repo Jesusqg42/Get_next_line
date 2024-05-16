@@ -6,7 +6,7 @@
 /*   By: jquiaro- <jquiaro-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 17:39:57 by jquiaro-          #+#    #+#             */
-/*   Updated: 2024/05/15 03:36:26 by jquiaro-         ###   ########.fr       */
+/*   Updated: 2024/05/16 18:52:37 by jquiaro-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ char	*ft_strjoin(char *s1, char *s2)
 	while (s2[++c])
 		str[i + c] = s2[c];
 	str[i + c] = '\0';
-	free(s1);
+	ft_free(&s1);
 	return (str);
 }
 
